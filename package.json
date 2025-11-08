@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:run": "npx cypress run --env url=http://localhost:5000/pdf,file_name=pdf_teste_thomaz,email=pdf_testmail@yopmail.com"
+    "cy:run": "npx cypress run --env url=http://localhost:5000/pdf,file_name=pdf_teste_thomaz,email=pdf_testmail@yopmail.com --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
