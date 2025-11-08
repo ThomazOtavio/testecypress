@@ -32,7 +32,7 @@ it('valida o email na resposta da API', () => {
     cy.get('iframe#ifmail', { timeout: 15000 }).should('exist').then(($iframe) => {
       const body = $iframe.contents().find('body');
       cy.wrap(body)
-        .find('a[title*="'+Cypress.env('file_name')+'"]', { timeout: 10000 })
+        .find('a[title*="'+Cypress.env('pdf_teste_thomaz')+'"]', { timeout: 10000 })
         .should('be.visible');
     });
   });
