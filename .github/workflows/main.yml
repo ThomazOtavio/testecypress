@@ -20,6 +20,6 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USER }}
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
-      - name: Abobrinha
+      - name: Run Docker Container
         run: |
           docker compose up -d
