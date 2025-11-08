@@ -1,0 +1,9 @@
+name: teste_cypress_pdf
+
+on:
+  workflow_dispatch
+
+jobs:
+  teste:
+    runs-on: windows-latest
+      
