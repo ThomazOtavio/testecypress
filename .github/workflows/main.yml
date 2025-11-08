@@ -23,3 +23,12 @@ jobs:
       - name: Run Docker Container
         run: |
           docker compose up -d
+
+      - name: Install Cypress Dependencies
+          run: npm ci
+
+      - name: Run Cypress Tests
+        run: |
+          echo "Running Cypress tests on docker container"
+          npm run cy:run
+          
